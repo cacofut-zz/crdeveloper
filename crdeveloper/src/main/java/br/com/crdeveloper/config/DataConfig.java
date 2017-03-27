@@ -22,7 +22,7 @@ public class DataConfig {
 		dataSource.setDriverClassName( "com.mysql.jdbc.Driver" );
 		dataSource.setUrl( "jdbc:mysql://localhost:3306/crdeveloper" );
 		dataSource.setUsername( "root" );
-		dataSource.setUsername( "" );
+		dataSource.setPassword( "" );
 		return dataSource;
 	}
 	

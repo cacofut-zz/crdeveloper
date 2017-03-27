@@ -1,0 +1,28 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1"></meta> 
+<title>Insert title here</title>
+</head>
+<body>
+	<table>
+		<thead>
+			<tr>
+				<th>id</th>
+				<th>Usuario</th>
+				<th>Senha</th>
+				<th>Ativo</th>
+				
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="usuario : ${ usuarios }">
+				<td>[[${usuario.id}]]</td>
+				<td>[[${usuario.usuario}]]</td>
+				<td>[[${usuario.senha}]]</td>
+				<td>[[${usuario.ativo}]]</td>
+			</tr>
+		</tbody>		
+	</table>
+</body>
+</html>
